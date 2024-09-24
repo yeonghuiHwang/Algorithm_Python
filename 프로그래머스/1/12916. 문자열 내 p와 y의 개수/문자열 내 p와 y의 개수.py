@@ -1,11 +1,5 @@
 def solution(s):
-    count_p = 0
-    count_y = 0
-    for i in str(s):
-        if (i == 'p') or (i == 'P'):
-            count_p+=1
-        elif (i == 'y') or (i == 'Y'):
-            count_y+=1
-            
-    return (count_p == count_y)
-        
+    if s.lower().count('p') == s.lower().count('y'):
+        return True
+    else:
+        return False
